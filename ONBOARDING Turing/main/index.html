@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TURING ONBOARDING</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">TJ</div>
+        <div class="nav-icons">
+            <div class="icon"><i class="icon-message"></i></div>
+            <div class="icon"><i class="icon-bell"></i></div>
+            <div class="icon"><i class="icon-user"></i></div>
+            <div class="language-selector">
+                <div>AZ <div class="icon-chevron-down"></div></div>
+                <div class="language_items">
+                    <div>EN</div>
+                    <div>RU</div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        
+        <div class="main-content">
+            <aside class="sidebar">
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-house-user"></i>
+                    <span>Əsas</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Sinif</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-clipboard"></i>
+                    <span>Proyektlər</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>Portfolio</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>Calendar</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-book"></i>
+                    <span>To Do</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Activities</span>
+                </div>    
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-gem"></i>
+                    <span>AI</span>
+                </div>    
+            </aside>
+            <div class="dashboard">
+                <div class="card welcome-card">
+                    <h1>Xoş gəldin, Rəfiqə!</h1>
+                    
+                    <div class="todo-section">
+                        <h2>Daily To Do</h2>
+                        <div class="todo-item">
+                            <input type="checkbox" id="task1" checked>
+                            <label for="task1">Yarımfinal layihəsi</label>
+                        </div>
+                        <div class="todo-item">
+                            <input type="checkbox" id="task2">
+                            <label for="task2">Hakaton</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card chart-card">
+                    <h2>Davamiyyət</h2>
+                    <div class="donut-chart-container">
+                        <div class="donut-chart">
+                            <div class="donut-hole"></div>
+                            <div class="donut-label top-label">30.0%</div>
+                            <div class="donut-label bottom-label">70.0%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card performance-card">
+                    <h2>Qiymətlərim</h2>
+                    <div class="performance-chart-container">
+                        <canvas id="performanceChart"></canvas>
+                        <div class="chart-labels">
+                            <div class="y-labels">
+                                <span>100</span>
+                                <span>80</span>
+                                <span>60</span>
+                                <span>40</span>
+                                <span>20</span>
+                                <span>0</span>
+                            </div>
+                        
+                            <div class="x-labels">
+                                <span>Figma</span>
+                                <span>Sketch</span>
+                                <span>XD</span>
+                                <span>PS</span>
+                                <span>AI</span>
+                                <span>CorelD RAW</span>
+                                <span>InDesign</span>
+                                <span>Canva</span>
+                                <span>Webflow</span>
+                                <span>Affinity</span>
+                                <span>Marker</span>
+                                <span>Figma</span>
+                            </div>
+                        </div>    
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #9c6dff;"></span>
+                                <span>2020</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #ff6d6d;"></span>
+                                <span>2021</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #6dceff;"></span>
+                                <span>2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-column">
+                <div class="card calendar-card">
+                    <div class="calendar-header">
+                        <div class="month-selector">March, 2023</div>
+                        <i class="icon-chevron-down"></i>
+                    </div>
+                    <div class="calendar">
+                        <div class="calendar-days">
+                            <div class="day-name">Mo</div>
+                            <div class="day-name">Tu</div>
+                            <div class="day-name">We</div>
+                            <div class="day-name">Th</div>
+                            <div class="day-name">Fr</div>
+                            <div class="day-name">Sa</div>
+                            <div class="day-name">Su</div>
+                        </div>
+                        <div class="calendar-dates" id="calendarDates">
+                                <!-- Calendar dates will be generated by JavaScript -->
+                            </div>
+                    </div>
+                </div>
+                    
+                <div class="card seminar-card">
+                    <div class="seminar-badge">Bugün</div>
+                    <h3>Critical Thinking - Seminar</h3>
+                    <p class="seminar-description">
+                            Muhammed Xasiyev tərəfindən keçiriləcək bu seminarda siz tənqidi düşünmənin əsas prinsipləri və tətbiq üsulları haqqında öyrənəcəksiniz.
+                    </p>
+                    <button class="register-button">Qeydiyyatdan keç</button>
+                </div>
+                
+                <div class="card course-card">
+                    <h3 class="course-title">Dərsim</h3>
+                    <div class="course-tag">#UX/UI/0001</div>
+                    <h4 class="course-subtitle">Mövzu</h4>
+                    <p class="course-text">İnsan faktorlu dizayn</p>
+                    <h4 class="course-subtitle">Tapşırıq 3.1</h4>
+                    <p class="course-text">
+                        Case Study etikir layihə etmək<br>
+                        Font və rəngləri tətbiq edə biləcəksiniz<br>
+                        Tarix: 31 Mart
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Nunito", sans-serif; */
+    font-family: 'Futura TS New', sans-serif;
+                                                
+}
+
+body{
+    background-color: #ffdfd4;
+}
+.container{
+    display: flex;
+}
+
+.static-back{
+    height: 100vh;
+    width: 60%;
+    background-color: #040926;
+    position: relative;
+}
+
+.biraddim{
+    color: #ffdfd4;
+    opacity: 0.8;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-style: italic;
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+}
+
+img{
+    width: 480px;
+    margin-top: 65px;
+    margin-left: 65px;
+}
+
+.login_page{
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 340px;
+}
+
+h2{
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #040926;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid #040926;
+    outline: none;
+    padding-left: 10px;
+    background-color: transparent;
+    letter-spacing: 1px;
+}
+
+input:focus{
+    border: 2px solid #040926;
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+input::placeholder{
+    color: #464141;
+    font-weight: 300;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    color: #ffdfd4;
+    background-color: #ff4401;
+    transition: 0.3s ;
+}
+
+button:hover{
+    cursor: pointer;
+    border: 2px solid #ff4401;
+    background-color: transparent;
+    color: #ff4401;
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+.forgot_password{
+    text-align: right;
+    color: #040926;
+}
+
+.forgot_password p{
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 17px;
+}
